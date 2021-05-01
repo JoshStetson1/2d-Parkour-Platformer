@@ -1,0 +1,346 @@
+fileFormatVersion: 2
+guid: 10a5f986b71857549b7ac02edd30935e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7189015808595446348
+    second: _nemyModel2_0
+  - first:
+      213: -4306964728339015976
+    second: _nemyModel2_1
+  - first:
+      213: 536425275424398910
+    second: _nemyModel2_2
+  - first:
+      213: 8962040600317098739
+    second: _nemyModel2_3
+  - first:
+      213: 8668069894046993111
+    second: _nemyModel2_4
+  - first:
+      213: 4686610408755378546
+    second: _nemyModel2_5
+  - first:
+      213: 1036619149909696168
+    second: _nemyModel2_6
+  - first:
+      213: -6211015677071433389
+    second: _nemyModel2_7
+  - first:
+      213: -2887330474719320476
+    second: _nemyModel2_8
+  - first:
+      213: -5309470282367993690
+    second: _nemyModel2_9
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: _nemyModel2_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 196
+        width: 48
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5808447, y: 0.07556452}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4acff3f9c384c360800000000000000
+      internalID: 7189015808595446348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _nemyModel2_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 148
+        width: 24
+        height: 44
+      alignment: 9
+      pivot: {x: 0.80316836, y: 0.87482625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6573b16669a34c0800000000000000
+      internalID: -4306964728339015976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _nemyModel2_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 92
+        width: 44
+        height: 96
+      alignment: 9
+      pivot: {x: 0.48897588, y: 0.045247793}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e563622f3c17700800000000000000
+      internalID: 536425275424398910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _nemyModel2_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 148
+        width: 24
+        height: 48
+      alignment: 9
+      pivot: {x: 0.21704228, y: 0.8739074}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa778c61709f5c70800000000000000
+      internalID: 8962040600317098739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _nemyModel2_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 84
+        width: 16
+        height: 60
+      alignment: 9
+      pivot: {x: 0.46968323, y: 0.8718862}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dacdeaa4ab2b4870800000000000000
+      internalID: 8668069894046993111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _nemyModel2_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 24
+        height: 60
+      alignment: 9
+      pivot: {x: 0.41915512, y: 0.8799709}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2793386065f2a0140800000000000000
+      internalID: 4686610408755378546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _nemyModel2_6
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 64
+        width: 24
+        height: 60
+      alignment: 9
+      pivot: {x: 0.39894357, y: 0.86380196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae1cb5ef9fc26e00800000000000000
+      internalID: 1036619149909696168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _nemyModel2_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 84
+        width: 16
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0.88805515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35166c9262a0ec9a0800000000000000
+      internalID: -6211015677071433389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _nemyModel2_8
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 40
+        height: 60
+      alignment: 9
+      pivot: {x: 0.31809902, y: 0.91230875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466e1312b342ee7d0800000000000000
+      internalID: -2887330474719320476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _nemyModel2_9
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 40
+        height: 60
+      alignment: 9
+      pivot: {x: 0.3180992, y: 0.91230875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a876f1b8e8f056b0800000000000000
+      internalID: -5309470282367993690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
