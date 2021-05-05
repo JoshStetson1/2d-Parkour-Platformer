@@ -46,9 +46,11 @@ public class PlayerController : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(feet.position, 0.3f, whatIsGround);
         playerScript.anim.SetBool("inAir", !isGrounded);
+
         //running animations
         if (isGrounded && !(moveValue == 0)) playerScript.anim.SetBool("isRunning", true);
         else if (moveValue == 0) playerScript.anim.SetBool("isRunning", false);
+
         //flipping player
         bool canFlip = !wallJumping && !sliding;
         if (moveValue > 0 && canFlip) transform.localScale = new Vector3(1, 1, 1);

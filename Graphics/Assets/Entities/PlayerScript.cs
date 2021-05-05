@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    PlayerController controller;
     public InputMaster input;
     [HideInInspector]
     public Animator anim;
@@ -23,7 +22,6 @@ public class PlayerScript : MonoBehaviour
     private void Awake()
     {
         input = new InputMaster();//for input keys
-        controller = GetComponent<PlayerController>();
         anim = GetComponent<Animator>();
 
         Physics2D.IgnoreLayerCollision(9, 9, true);
@@ -41,8 +39,6 @@ public class PlayerScript : MonoBehaviour
     {
         colliders = GetComponentsInChildren<Collider2D>(true);
         rigidbodies = GetComponentsInChildren<Rigidbody2D>(true);
-
-        input.Player.Jump.performed += _ => restart();
     }
     void Update()
     {

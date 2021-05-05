@@ -10,6 +10,7 @@ public class Explosion : MonoBehaviour
     public bool exploded;
 
     public GameObject boom;
+
     public void Explode()
     {
         if (exploded) return;
@@ -18,6 +19,7 @@ public class Explosion : MonoBehaviour
 
         FindObjectOfType<AudioManager>().Play("explode");
         Instantiate(boom, transform.position, transform.rotation);
+
         Collider2D[] objects = Physics2D.OverlapCircleAll(transform.position, explodeDistance);
 
         foreach (Collider2D obj in objects)

@@ -66,6 +66,7 @@ public class Drone : MonoBehaviour
 
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 force = direction * speed * Time.deltaTime;
+        if (rb.mass > 1) force *= rb.mass;
         if (!enemyScript.canShoot()) rb.AddForce(force);
 
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);

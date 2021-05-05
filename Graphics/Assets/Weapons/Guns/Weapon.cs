@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class Weapon : MonoBehaviour
 {
@@ -9,15 +10,32 @@ public class Weapon : MonoBehaviour
     public bool sizeByDamage = true;
 
     public float spread, amount, bulletSpeed, fireRate, recoil, damage;
+    public bool isAuto;
 
     [HideInInspector]
     public bool readyToShoot = true;
 
-    public bool isAuto;
+    LineRenderer lr;
+    public bool drawAimLine;
+    public float lineDist = 10;
 
+    private void Start()
+    {
+        if (drawAimLine) lr = GetComponent<LineRenderer>();
+    }
     private void Update()
     {
         checkForPickup();
+        if (drawAimLine) drawLine();
+    }
+    void drawLine()
+    {
+        if (transform.parent == null) return;
+
+        RaycastHit2D hit = Physics2D.Raycast(bulletPoint.position, transform.root.localScale.x * bulletPoint.right, lineDist);
+        if (!hit) hit.point = transform.root.localScale.x * bulletPoint.right.normalized * lineDist + bulletPoint.position;
+        lr.SetPosition(0, bulletPoint.position);
+        lr.SetPosition(1, hit.point);
     }
     public void shoot()
     {
@@ -67,6 +85,8 @@ public class Weapon : MonoBehaviour
         newBullet.GetComponent<Rigidbody2D>().velocity = ((bulletPoint.right * transform.root.localScale.x) * bulletSpeed) + spreadVector;
         if(sizeByDamage) newBullet.transform.localScale *= (1 + (damage / 200));
         newBullet.transform.localScale = new Vector3(newBullet.transform.localScale.x * transform.root.localScale.x, newBullet.transform.localScale.y, newBullet.transform.localScale.z);//flip bullet relative to player
+
+        if (newBullet.GetComponent<AIDestinationSetter>() != null) newBullet.GetComponent<AIDestinationSetter>().target = FindObjectOfType<PlayerScript>().transform;
 
         FindObjectOfType<AudioManager>().PlayAtPitch("shot", (2 - (damage/100)) + ((Time.timeScale / 5) - 0.25f));
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed, damage;
+    [HideInInspector] public float damage;
     [HideInInspector] public string type;
     [HideInInspector] public GameObject origin;
 

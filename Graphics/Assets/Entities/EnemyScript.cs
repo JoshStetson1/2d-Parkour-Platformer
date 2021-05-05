@@ -9,7 +9,7 @@ public class EnemyScript : MonoBehaviour
     public float addAngle;
     GameObject player;
 
-    int health = 100;
+    public int health = 100;
     public float jumpForce = 5;
     [HideInInspector]
     public bool isDead;
